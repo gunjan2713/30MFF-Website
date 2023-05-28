@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30MFF - Gunjan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" width = "90" height = "90">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class=" title"> The Green Heart of <span style="color:rgb(20, 138, 27); padding-left: 20px;">NYUAD</span> </div>
+        <div class="subtitle">Journey Through Nature</div>
+
+        <div class="tab">
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9317879/" target="_blank">Read-AcademicGreens</a>
+        </div>
+    </div>   
+</div>
+<div id="Projects">
+    <div class="video-description">
+        <h2>Description</h2>
+        <p>In this compelling visual journey, I dive deep into the symbiotic relationship between students and the natural environment within the confines of a university campus. This video is a vivid exploration that captures the indispensable role of greenery in fostering an atmosphere of tranquility, positivity, and productivity, making it the unsung hero of a university ecosystem. This video narrates a beautiful story of life in a green campus, encapsulating the tranquility that this natural landscape brings to our lives. It provides a unique perspective on how the greenery on campus is not just for aesthetics, but serves as a significant determinant in reducing stress levels among students, fostering their mental health, and enhancing their overall academic performance.</p>
+    </div>
+    <div class="video-container">
+        <!-- Video embed code goes here -->
+        <iframe class="centered-video" src="GUNJAN.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="contact">
+    <div class="centered-text">
+        <h3> Directed and Produced by Gunjan</h3>
+        <div class="info-box">
+            <p>Student of Interactive Media and Computer Science with minor in Mathematics</p>
+        </div>
+    </div>
+    <div class=" contact-container">
+        <div class="row">
+            <div class="contact-left">               
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>gg2713@nyu.edu</p>
+                <p><i class="fas fa-phone"></i>+971 523033075</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:gg2713@nyu.edu"><i class="fab fa-google"></i></a>
+                </div>              
+            </div>  
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows ='6' placeholder="Your Message"></textarea>
+                     <button type="Submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+    sidemenu.classList.add("opened");
+    sidemenu.classList.remove("closed");
+    }
+    function closemenu(){
+    sidemenu.classList.add("closed");
+    sidemenu.classList.remove("opened");
+    }
+
+</script>
+</body>
+</html>
